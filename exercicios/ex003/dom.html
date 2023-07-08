@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Dom</title>
+    <style>
+        body{
+            background-color: #91540a;
+            color: bisque ;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Entendendo o DOM</h1>
+    <p>aqui vai um resultado</p>
+    <p>aprendendo a usar <strong>DOM</strong> em javascript</p>
+    <div>clique em mim</div>
+
+    <script>
+
+        // acessando elemento por TAG
+        var p1 = window.document.getElementsByTagName('p')[0];
+        window.document.write('Ele tá aqui ->' + p1.innerText);
+
+        // manipulando variavel com DOM
+        p1.style.color='#91540a';
+        var fundo = document.body;
+        fundo.style.background='blue';
+
+    </script>
+</body>
+</html>
