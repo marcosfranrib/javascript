@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+</head>
+<body>
+   
+    <h1>Brasileiro ou Estrangeiro</h1>
+    Em que país você mora? <input type="text" name="" id="pais">
+
+    <input type="button" value="Testar" onclick="descobrirNacionalidade()">
+
+    <div id="res"></div>
+
+
+    <script>
+    
+    function descobrirNacionalidade(){
+      
+        var pais = document.getElementById('pais')
+        var res = document.getElementById('res')
+      
+        if (pais.value == 'Brasil'){
+            res.innerHTML = `Morando no ${pais.value}, você é Brasileiro`
+        } else {
+            res.innerHTML = `Morando em ${pais.value}, você é estrangeiro`
+        }
+
+    }
+    </script>
+
+</body>
+</html>
