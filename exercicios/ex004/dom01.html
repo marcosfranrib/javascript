@@ -22,25 +22,33 @@
             margin-right: 5px;
         }
 
+        #area2{
+            background-color: red;
+        }
+
     </style>
 </head>
 <body>
 
-    <div id="area" onmouseover="entrar()" onmouseout="sair()">
-        Interaja...
+    <div id="area" onmouseover="entrar()" onmouseout="sair()" onclick="clicar()">
+        Tô verde
     </div>
 
-    <div id="area2" onmouseover="entrar2()" onmouseout="sair2()">
-        Interaja...
+    <div id="area2" onmouseover="entrar2()" onmouseout="sair2()" onclick="clicar2()">
+        Tô vermelho
     </div>
 
     <script>
+        
+        /*PRIMEIRA DIV*/
+
         function entrar(){
 
             var fundo = document.getElementById('area')
 
             fundo.style.backgroundColor = 'white'
             fundo.style.color='green'
+            fundo.innerText= 'Tô branco'
         }
 
         function sair(){
@@ -48,7 +56,19 @@
            
            fundo.style.backgroundColor = 'green'
            fundo.style.color = 'white'
+           fundo.innerText='Tô verde'
         }
+
+        function clicar(){
+            var fundo = document.getElementById('area')
+
+            fundo.style.backgroundColor = 'blue'
+            fundo.style.color = 'white'
+            fundo.innerText='Tô azul'
+        }
+
+
+        /*SEGUNDA DIV*/
 
         function entrar2(){
 
@@ -56,6 +76,7 @@
 
             fundo.style.backgroundColor = 'yellow'
             fundo.style.color='red'
+            fundo.innerText='Tô amarelo'
         }
 
         function sair2(){
@@ -63,6 +84,15 @@
 
             fundo.style.backgroundColor = 'red'
             fundo.style.color = 'white'
+            fundo.innerText='Tô vermelho'
+        }
+
+        function clicar2(){
+            var fundo = document.getElementById('area2')
+            
+            fundo.style.backgroundColor = 'black'
+            fundo.style.color = 'white'
+            fundo.innerText = 'Tô preto'
         }
 
     </script>
