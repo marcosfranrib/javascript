@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evento Dom</title>
     <style>
-        #area{
+        
+        body{
+            display: flex;
+        }
+
+        #area,#area2{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -14,12 +19,18 @@
             background-color: green;
             height: 200px;
             width: 200px;
+            margin-right: 5px;
         }
+
     </style>
 </head>
 <body>
 
     <div id="area" onmouseover="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+
+    <div id="area2" onmouseover="entrar2()" onmouseout="sair2()">
         Interaja...
     </div>
 
@@ -38,6 +49,22 @@
            fundo.style.backgroundColor = 'green'
            fundo.style.color = 'white'
         }
+
+        function entrar2(){
+
+            var fundo = document.getElementById('area2')
+
+            fundo.style.backgroundColor = 'yellow'
+            fundo.style.color='red'
+        }
+
+        function sair2(){
+            var fundo = document.getElementById('area2')
+
+            fundo.style.backgroundColor = 'red'
+            fundo.style.color = 'white'
+        }
+
     </script>
 
 </body>
