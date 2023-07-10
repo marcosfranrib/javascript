@@ -8,28 +8,24 @@
 <body>
 
     <h1>somando</h1>
-    <input type="number" name="" id="num1">
-    <input type="number" name="" id="num2">
-    <input type="number" name="" id="resultado">
-    <button onclick="somar()">Somar</button>
+    <input type="number" name="num1" id="num1">
+    <input type="number" name="num2" id="num2">
+    <input type="number" name="res" id="res">
 
+    <input type="button" value="Somar" onclick="somar()">
 
     <script>
-        
         function somar(){
             
-            var tn1 = document.getElementById('num1')
-            var tn2 = document.getElementById('num2')
-            var res = document.getElementById('resultado')
+            var num1 = document.getElementById('num1')
+            var num2 = document.getElementById('num2')   
+            var res = document.getElementById('res')
 
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
-            var som = n1 + n2
-            res.value = som            
-        
-    
+            var nume1 = Number(num1.value)
+            var nume2 = Number(num2.value)
+         
+            res.value = nume1 + nume2
         }
-
     </script>
     
 </body>
