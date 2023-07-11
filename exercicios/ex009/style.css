@@ -18,10 +18,22 @@ header,footer{
 section{
     background-color: white;
     border-radius: 10px;
-    padding: 15px;
-    width: 500px;
+    padding: 25px;
+    width: 350px;
     margin: auto;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.418);
 }
 
+#horas{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#imagem{
+    background-color: green;
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+    margin: auto;
+}
 footer{}
