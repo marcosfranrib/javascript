@@ -33,5 +33,15 @@ header{
     border-radius: 50%;
     height: 150px;
     width: 150px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+#botao{
+    text-align: center;
+}
+
+#p{
+    text-align: center;
 }
 
