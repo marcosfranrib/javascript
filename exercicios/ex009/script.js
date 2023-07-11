@@ -6,7 +6,7 @@ function carregar(){
 
     //container de horas
     var date = new Date()
-    var hora = 10
+    var hora = date.getHours()
 
     if (hora >= 6 && hora < 12){
         msg.innerHTML = `Agora são ${hora} horas`
