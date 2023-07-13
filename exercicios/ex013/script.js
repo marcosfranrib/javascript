@@ -11,8 +11,7 @@ function calcular(){
 
     } else {
         for(var c = 0;c <= 10; c++){
-            var multi = c*vezes
-            exibir.innerHTML += `${c} x ${vezes} = ${multi}<br>`
+            exibir.innerHTML += `${c} x ${vezes} = ${c*vezes}<br>`
         }
     }
 
